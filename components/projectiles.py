@@ -14,7 +14,7 @@ class Projectile:
         
     def get_force(self):
         force = (self.weight / 2)*(self.speed**2)
-        return force
+        return int(force)
     
     def get_pain(self):
         pain = self.get_force()*self.firmness
