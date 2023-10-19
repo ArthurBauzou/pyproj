@@ -14,10 +14,10 @@ class Projectile:
         
     def get_force(self):
         force = (self.weight / 2)*(self.speed**2)
-        return int(force)
+        return round(force, 2)
     
     def get_pain(self):
-        pain = self.get_force()*self.firmness
+        pain = int(self.get_force())*self.firmness
         return pain
 
 # ce qui se passe quand on appelle directement le fichier

@@ -21,20 +21,23 @@ class Victim:
         self.scream_sound = rd.choice(['a', 'o', 'u', 'i'])
         self.scream_mod = rd.choice(['h', 'y', 'g'])
         self.scream_is_weird = rd.choice([True, False])
+        self.scream_number = 0
 
     def hit(self, value):
         self.tolerance -= value
         message = self.name
+        scream = None
         if self.tolerance < 0 :
-            self.scream(abs(self.tolerance))
+            # self.scream(abs(self.tolerance))
             message += f' {scr_text[0]}'
+            scream = f' {self.scream(abs(self.tolerance)+8)}'
             self.tolerance = self.max_tolerance
         else:
             # calculer la proportion de l’endurance maximale ramenée à 4
             x = math.ceil((self.tolerance/MAX_T)*4)
             message += f' {scr_text[x]}'
 
-        print(message)
+        return message, scream
     
     def scream(self, intensity):
         scream = ''
@@ -45,4 +48,5 @@ class Victim:
                 scream += self.scream_sound
 
         scream += f' {"!"*(intensity//5)} '
-        print(scream)
+        self.scream_number += 1
+        return scream
