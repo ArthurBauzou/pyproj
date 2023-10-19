@@ -19,3 +19,7 @@ class Projectile:
     def get_pain(self):
         pain = self.get_force()*self.firmness
         return pain
+
+# ce qui se passe quand on appelle directement le fichier
+if __name__ == '__main__':
+    print('Mauvais point d’entrée')

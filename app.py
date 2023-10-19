@@ -2,6 +2,8 @@ import components.victimes as vic
 import components.projectiles as proj
 import random as rd
 
+
+
 def throw_at(victim:vic.Victim, object:proj.Projectile):
     object.throw()
     print(f'{object.name} a été jetté sur {victim.name} avec une force de {object.get_force()}')

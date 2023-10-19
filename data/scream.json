@@ -1,0 +1,13 @@
+{
+    "scream_commentary":[
+        "hurle de douleur",
+        "va bientot craquer",
+        "a très mal mais reste digne",
+        "grimace d’inconfort",
+        "s’en fout"
+    ],
+    "const":{
+        "max_tolerance": 70,
+        "min_tolerance": 50
+    }
+}
