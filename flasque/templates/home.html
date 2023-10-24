@@ -11,7 +11,7 @@
 <body>
     <section id="userform">
         <form action="submit">
-            {% for prop in user.keys() %}
+            {% for prop in users %}
             <label for="{{prop}}">
                 {{prop}}
                 <input type="text" id="{{prop}}">
