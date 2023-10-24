@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.min.css" integrity="sha512-Z6UIAdEZ7JNzeX5M/c5QZj+oqbldGD+E8xJEoOwAx5e0phH7kdjsWULGeK5l2UjehKtChHDaUY2rQAF/NEiI9w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <section>
+        <h1>USERS</h1>
+    </section>
+    <div>
+        {% for user in users %}
+        <div class="usercard">
+            <div class="avatar">
+
+            </div>
+            <div class="usertext">
+                <h2>{{user.username.upper()}}</h2>
+                <a>{{user.email}}</a>
+                <!-- <button class="showpass">😱</button> -->
+                <!-- <p>{{user.password}}</p> -->
+                <p>Membre depuis le {{user.since[:10]}}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</body>
+</html>

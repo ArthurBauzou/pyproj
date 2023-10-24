@@ -1,6 +1,52 @@
-.truc2 {
-    color: rgb(203, 110, 205);
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+body {
+    margin: 0 auto;
+    width: 640px;
+    background-color: #211e2a;
+    color: #e4d8d8;
 }
-.gros{
-    font-size: 64px;
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 48px;
+}
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 28px;
+}
+
+
+.usercard {
+    margin: 24px 8px;
+    background-color: #563856;
+    padding: 8px 0px;
+    border-radius: 4px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.usercard .avatar {
+    margin: 16px 24px;
+    width: 96px;
+    height: 96px;
+    background-color: #eeffee;
+    border-radius: 32px;
+}
+.usercard .avatar {
+    margin-left: 16px;
+}
+.usercard p {
+    font-size: 12px;
+}
+.usercard a {
+    color: #faace7;
+    text-decoration: none;
+    cursor: pointer;
+}
+.usercard a:hover {
+    text-decoration: underline;
 }
