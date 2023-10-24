@@ -11,7 +11,6 @@ app.config.update(
 #––– SGBD –––#
 client = MongoClient("mongodb://localhost:27017/")
 db = client.colorDB
-# total_users = db.users.find()
 
 user_props = {
     'username': '',

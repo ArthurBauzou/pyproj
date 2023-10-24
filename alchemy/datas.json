@@ -1,0 +1,30 @@
+{
+    "customers": [
+        {
+            "fistname": "Niruffle",
+            "lastname": "Gombert"
+        },
+        {
+            "fistname": "Anasthasine",
+            "lastname": "Médille"
+        },
+        {
+            "fistname": "Floquette",
+            "lastname": "VonBirk"
+        }
+    ],
+    "products": [
+        {
+            "name": "Couteau à gencives",
+            "price": 39.90
+        },
+        {
+            "name": "Plateau bossu",
+            "price": 139.90
+        },
+        {
+            "name": "Bonbons à l’ail",
+            "price": 9.95
+        }
+    ]
+}
