@@ -1,4 +1,2 @@
-pyproj_scream/components/__pycache__
-pyproj_scream/test/__pycache__
-pyproj_color/__pycache__
-flasque/__pycache__
+# ignore tous les dossiers avec ce nom : '__pycache__'
+__pycache__/
