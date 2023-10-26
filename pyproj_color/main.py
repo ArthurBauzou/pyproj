@@ -74,12 +74,12 @@ with tab2:
             biglist = dfc['hex'].to_list()
             color_list = rd.sample(biglist, 6)
 
-        for i,c in enumerate(color_list):
+            for i,c in enumerate(color_list):
                 color_name = dfc.loc[dfc['hex']==c]['name'].to_string()
                 st.write(give_bg_color(c, color_name), unsafe_allow_html=True)
 
-        st.write(color_list)
-        st.write(dfc.head())
+            st.write(color_list)
+            st.write(dfc.head())
 
     else :
         st.write('déso mais c’est pas encore possible 😔')
