@@ -38,9 +38,9 @@ with tab1:
             "#e7c084"
         ]):
             col_input.append( st.text_input(
-            label = f'color{i}', 
-            value = c, 
-            label_visibility = 'hidden'
+                label = f'color{i}', 
+                value = c, 
+                label_visibility = 'hidden'
             ))
 
     with col2 : 
